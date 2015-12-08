@@ -42,7 +42,7 @@ group :development, :test do
   gem 'byebug'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.4'
-  gem 'capybara', '~> 2.5'
+
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -53,4 +53,6 @@ end
 
 group :test do
   gem 'simplecov', :require => false
+  gem 'factory_girl_rails', '~> 4.5'
+  gem 'capybara', '~> 2.5'
 end
