@@ -16,4 +16,12 @@ RSpec.feature "Users can edit existng projects" do
 		expect(page).to have_content("Project has been updated.")
 		expect(page).to have_content("Rhinegeist")
 	end
+
+	scenario "when providing invalid attributes" do
+		fill_in	"Name", with: ""
+		click_button "Update Project"
+
+		expect(page).to have_content "Project has not been updated."
+		
+	end
 end
