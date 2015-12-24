@@ -15,7 +15,6 @@ class ProjectsController < ApplicationController
 
 	def create
 		@project = Project.new(project_params)
-
 		if @project.save
 			flash[:notice] = "Project has been created."
 			redirect_to @project
@@ -40,7 +39,7 @@ class ProjectsController < ApplicationController
 
 	def destroy
 		@project.destroy
-
+		@project.name.downcase!
 		flash[:notice] = "Project has been deleted."
 		redirect_to projects_path
 	end

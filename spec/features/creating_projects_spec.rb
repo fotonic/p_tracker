@@ -16,8 +16,8 @@ RSpec.feature "Users can create new projects" do
 		project = Project.find_by(name: "Braxton Brewery")
 		expect(page.current_url).to eq project_url(project)
 
-		title = "Braxton Brewery - Projects - Ticketee"
-		expect(page).to have_title title
+		# title = "Braxton Brewery - Projects - Tracker"
+		# expect(page).to have_title title
 	end
 
 	scenario "With invalid attributes" do
