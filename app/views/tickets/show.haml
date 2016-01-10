@@ -1,6 +1,10 @@
 #ticket
 	%header
 		%h1= @project.name
+	-# %header
+	-# 	%h2= @ticket.name
 	%header
 		%h2= @ticket.name
+		%ul.actions
+			%li= link_to "Edit Ticket", [:edit, @project, @ticket], class: "edit"
 	= simple_format(@ticket.description)
