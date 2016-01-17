@@ -28,6 +28,7 @@ gem 'simple_form', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-rails', '~> 4.5'
 gem 'titleize', '~> 1.3'
+gem 'devise', '~> 3.5', '>= 3.5.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
